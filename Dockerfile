@@ -4,8 +4,8 @@ RUN echo "http://dl-cdn.alpinelinux.org/alpine/v3.13/community" >> /etc/apk/repo
 RUN echo "http://dl-cdn.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositories
 RUN apk -U upgrade && apk add --no-cache \
     curl \
-    nginx \
+    nginx 
     
 EXPOSE 80
 
-CMD nginx
+CMD ["nginx", "-g", "daemon off;"]
