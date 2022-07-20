@@ -8,4 +8,5 @@ RUN apk -U upgrade && apk add --no-cache \
     
 EXPOSE 80
 
-CMD ["nginx", "-g", "daemon off;"]
+CMD nginx
+#CMD ["nginx", "-g", "daemon off;"]
