@@ -6,7 +6,6 @@ RUN apk -U upgrade && apk add --no-cache \
     curl \
     nginx 
     
-EXPOSE 80
 
 CMD nginx
 #CMD ["nginx", "-g", "daemon off;"]
